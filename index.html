@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        <nav>
+            <header>
+                <h1>Tip Calculator</h1>
+            </header>
+        </nav>
+        <div class="container">
+            <div class="content">
+                <form>
+                    <label for="billAmount">Bill Amount :</label>
+                    <input type="number" min="0" name="billAmount" id="billAmount" placeholder="Amount to be paid" required>
+                    <label for="TipPercentage">Tip Percentage % :</label>
+                    <input type="number" min="5" max="100" name="TipPercentage" id="TipPercentage" placeholder="Tip Percentage" required>
+                    <label for="splitAmong">No. Of People :</label>
+                    <input type="number" min="0" max="10" name="splitAmong" id="splitAmong" placeholder="No. of People to split amount" required>
+                    <button type="submit">CALCULATE</button>
+                    <button type="reset">RESET</button>
+                    <label for="output" id="output">Your Tip :</label>
+                </form>
+            </div>
+            <section>
+                <div class="output"></div>
+            </section>
+        </div>
+        <!-- script for calculation -->
+        <script src="index.js"></script>
+    </body>
+</html>
