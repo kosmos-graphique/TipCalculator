@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: blue;
+    background: repeating-linear-gradient(45deg, rgb(243, 201, 87) 30% , rgb(36, 21, 245) 50%);
 }
 .container{
     position: relative;
